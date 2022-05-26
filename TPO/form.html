@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c705ba8c18.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Ciudad de Buenos Aires</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-2 col-s-3 menu">
+          <ul>
+            <li><a href="Index.html">La Ciudad</a></li>
+            <li><a href="food.html">La comida</a></li>
+            <li><a href="location.html">Ubicacion</a></li>
+            <li><a href="form.html">Informes</a></li>
+          </ul>
+    </div>
+      
+    <div class="col-7 col-s-9">
+        <div class="container">
+            <form name="myForm" action="/action_page.php" 
+            onsubmit="return validateForm()" method="post">
+                
+                <div class="row">
+                    <div class="col-3">
+                        <label for="fname"><span>*</span> Nombres:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" id="fname" name="fname" placeholder="Su nombre..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="lname"><span>*</span> Apellidos</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" id="lname" name="lname" placeholder="Su apellido..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="email"><span>*</span> Correo electronico:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" id="email" name="email" placeholder="Ingrese su Email..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="country">Pais:</label>
+                    </div>
+                    <div class="col-9">
+                        <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                      <label for="subject">Comentarios:</label>
+                    </div>
+                    <div class="col-9">
+                      <textarea id="subject" name="subject" placeholder="Deje su comentario.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+               </form>
+           </div>
+
+           <span><b>* campos obligatorios. (Boton submit animado)</b></span>
+
+    </div>
+      
+    <div class="col-3 col-s-12">
+          <div class="aside">
+            <h2>Los esperamos</h2>
+            <img src="img/messi.jpg">
+          </div>
+        </div>
+    </div>
+      
+    <div class="footer">
+        <a class="icon" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="icon" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <p>Derechos reservados @2020</p>
+    </div>
+
+    <script src="JavaScript/validation.js"></script>
+</body>
+</html>
